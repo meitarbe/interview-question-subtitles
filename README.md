@@ -11,7 +11,7 @@ As you can see, the project has pre-implemented code, a button which let you cho
 The mission - Implement a subtitles generation feature. The flow will be:
 
 1. A user choose a video from the file system (already implemented).
-2. After choosing a video, the video will be processed and subtitles will be generated for it.
+2. After choosing a video, the video will be processed and subtitles will be generated for it (also implemented).
 3. When the subtitiles are ready, the video will be shown, and when we’ll play it, the subtitles will be visible at the right timing like in this example:
 
 <img src="https://nostalgic-blinker-247.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Ff717d4d8-772b-45bf-9486-6afc736669d3%2F06e81ca9-ee7d-4bac-8ef7-423cecb1960a%2FUntitled.png?table=block&id=054a77ed-5256-4e74-a1f7-bc0fe4b50a77&spaceId=f717d4d8-772b-45bf-9486-6afc736669d3&width=2000&userId=&cache=v2" alt="alt_text" height="400">

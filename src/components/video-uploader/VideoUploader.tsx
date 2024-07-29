@@ -1,9 +1,5 @@
 import { ChangeEventHandler, useState } from "react";
-
-/**
- * Events related code:  
- * import { CAPTIONS_GENERATION_COMPLETED, GENERATE_SUBTITLES_TASK, dispatchCustomEvent } from "../../utils/ai-tools";
- */
+import {  GENERATE_SUBTITLES_TASK, dispatchCustomEvent /*,CAPTIONS_GENERATION_COMPLETED*/ } from "../../utils/ai-tools";
 
 function VideoUploader() {
     const [videoSrc, setVideoSrc] = useState<string>();
@@ -17,6 +13,11 @@ function VideoUploader() {
         reader.onload = (e) => {
             if (!e.target) return
             setVideoSrc(e.target.result as string);
+            dispatchCustomEvent(GENERATE_SUBTITLES_TASK, {
+                detail: {
+                  videoSrc
+                }
+            });
         };
 
         reader.readAsDataURL(file);
